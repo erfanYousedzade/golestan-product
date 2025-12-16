@@ -15,6 +15,9 @@
   color: $x;
   background-color: $y;
 }
+@mixin fonts($s){
+  font-size: $s;
+}
 body {
   font-family: sans-serif;
 }
@@ -173,7 +176,7 @@ background-image: url("../imges/back.png");
 
       li {
         display: flex;
-        font-size: 17px;
+        @include fonts(17px);
         width: 105px;
 
         a {
@@ -202,7 +205,7 @@ background-image: url("../imges/back.png");
   padding: 10px 15px;
   border-radius: 5px;
 
-  width: 190px;
+  width: 300px;
 
   opacity: 0;
   pointer-events: none;
@@ -216,6 +219,7 @@ background-image: url("../imges/back.png");
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+   width: 300px;
 }
 
 /* آیتم‌های داخل dropdown */
@@ -223,16 +227,17 @@ background-image: url("../imges/back.png");
   margin: 0;
   padding: 6px 0;
   cursor: pointer;
+   width: 500px;
 
   &:hover {
     color: #fff;
   }
 }
-
+.dropdown{width: 300px;}
 
 .p1{
    @include rang(#94979a, white);
-   font-size: 17px;
+   @include fonts(17px);
 }
 //...............................................................................media mobile
 @media all and (min-width: 300px) and (max-width: 767px){
@@ -258,7 +263,7 @@ margin: 0px auto; }
   width: 100%;
   background-image: url("../imges/back.png");
   color: #fff;
-  font-size: 15px;
+  @include fonts(15px);
   height: 1419px;
 
   .fot{
@@ -304,11 +309,11 @@ margin: 0px auto; }
   padding-left: 4px;
 h5{
   color: red;
-  font-size: 25px;
+  @include fonts(25px);
   font-family: sans-serif;
 }
 p{
-  font-size: 20px;
+  @include fonts(20px);
   font-family: sans-serif;
   color: #b3b3b4;
 
@@ -320,12 +325,12 @@ p{
 .b1{display: flex;
   p{
     padding-left: 10px;
-     font-size: 20px;
+     @include fonts(20px);
         @include rang(red, white); 
         margin-top: 10px;
   }
   i{
-        font-size: 30px;
+        @include fonts(30px);
         color: #94979a;
       }
 }
@@ -368,7 +373,7 @@ p{
       display: flex;
       margin-top: 20px;
       i{
-        font-size: 30px;
+        @include fonts(30px);
         color: #94979a;
       }
       p{
@@ -432,7 +437,7 @@ color: red;}
       display: flex;
     justify-content: center;
     font-family: sans-serif;
-  font-size: 20px;
+ @include fonts(20px);
 color: #94979a;
     }
 
@@ -452,7 +457,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   width: 100%;
   background-image: url("../imges/back.png");
   color: #fff;
-  font-size: 16px;
+  @include fonts(16px);
   height: 419px;
 
   .fot{
@@ -461,7 +466,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
     margin-top: 10px;
     .fb-1{
       padding-right: 40px;
-      width: 195px;
+      width: 185px;
 
       .img05{
         padding-bottom: 20px;
@@ -490,7 +495,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   width: 680px;
   margin: 80px auto;
   p{
-    font-size: 19px;
+    @include fonts(19px);
     color: #aeb3b7;
     font-family: sans-serif;
   }
@@ -505,7 +510,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   width: 100%;
   background-image: url("../imges/back.png");
   color: #fff;
-  font-size: 15px;
+  @include fonts(15px);
   height: 1219px;
 
   .fot{
@@ -543,7 +548,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   width: 300px;
   margin: 60px auto;
   p{
-    font-size: 19px;
+    @include fonts(19px);
     color: #aeb3b7;
   }
   .h61{font-size: 22px;
@@ -555,7 +560,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   width: 100%;
   background-image: url("../imges/back.png");
   color: #fff;
-  font-size: 15px;
+  @include fonts(15px);
   height: 1219px;
 
   .fot{
@@ -594,7 +599,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   width: 500px;
   margin: 50px auto;
   p{
-    font-size: 19px;
+    @include fonts(19px);
     color: #aeb3b7;
   }
   .h61{font-size: 22px;
@@ -606,7 +611,7 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   height: 95px;
   display: flex;
   margin-bottom: -10px;
-  font-size: 38px;
+  @include fonts(38px);
   margin-top: 30px;
   padding-top: 25px;
     .icon1{
@@ -635,12 +640,12 @@ margin-top: 70px;
 color: #bcbec0;
 p{
   color: gray;
-  font-size: 12px;
+  @include fonts(12px);
   margin-top: -3px;
  
 }
 h6{
-  font-size: 15px;
+ @include fonts(15px);
   color: #9f9f9f;
 
   
@@ -660,9 +665,21 @@ width: 100%;
 background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
 }} 
 .know{margin-top: 30px;}
-.p2{font-size: 14px;}
+.p2{@include fonts(14px);}
 .font{color: #9c9c9d;}
 .komaki3{margin-bottom: 60px;}
+.fix2{bottom: 4%;
+right: 4%;
+position: fixed;
+width: 30px;
+height: 30px;
+background-color: #7a7a7a;
+text-align: center;
+color: rgb(218, 216, 216);
+.fix22{font-size: 20px;color: #fff;
+}
+
+}
 /* ================== SAFE HORIZONTAL SCROLL FIX ================== */
 
 html,
@@ -714,6 +731,20 @@ img {
   background-position: center;
   background-size: cover;
 }
+//@media all and (min-width: 999px) {
+//.box9,.b31-2,.img03{  
+
+ // animation: slideIn 1s ease forwards;
+//}
+//@keyframes slideIn {
+//  from {
+//    transform: translateX(100%);
+//  }
+//  to {
+ //   transform: translateX(0);
+ // }
+//}
+//}
 
 
 
