@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="navbar w-100">
+      <ul>
+        <li class="lip1 lii d-none d-md-flex"><a class="a1">Home</a></li>
+        <li class="aboutus">
+          <a href="#">About us</a>
+
+          <div class="dropdown">
+            <p>Who we are</p>
+            <p>Our team</p>
+            <p>Our mission</p>
+          </div>
+        </li>
+        <li class="lip1 lii d-none d-md-flex"><a class="a1">Brands</a></li>
+        <li class="products">
+          <a href="#">Products</a>
+
+          <div class="dropdown">
+            <p>Product 1</p>
+            <p>Product 2</p>
+            <p>Product 3</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+          </div>
+        </li>
+        <li class="lip1 d-none d-md-flex"><a class="a1">Contact US</a></li>
+        <li class="lip d-none d-md-flex"><a class="a1">FA</a></li>
+      </ul>
+      <i class="bi bi-list list d-flex d-md-none"></i>
+    </div>
+    <br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <div class="box w-100">
+      <div class="container-fluid w-100 job3">
+        <div class="row">
+          <div class="col-12 col-md-3 job2">
+            <img src="imges/product-tea-1-1.jpg" class="img02" />
+          </div>
+          <div class="col-12 col-md-9 job">
+            <div class="b1">
+              <i class="bi bi-cup-hot"></i>
+              <p>Fragrant Earl Grey Tea</p>
+            </div>
+
+            <div class="b2">
+              <h5>Net Weight</h5>
+              <div class="b22 d-flex">
+                <div class="b221"><img src="imges/1.png" /></div>
+                <div class="b221"><img src="imges/2.png" /></div>
+                <div class="b221"><img src="imges/3.png" /></div>
+              </div>
+            </div>
+
+            <div class="b3">
+              <p class="p1">
+                Golestan Earl Grey tea is a unique blend of imported teas
+                scented with bergamot. The tea suits Iranian palates. Infusion
+                time: 7 to 8 minutes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box w-100">
+      <div class="container-fluid w-100 job3">
+        <div class="row">
+          <div class="col-12 col-md-3 job2">
+            <img src="imges/product-tea-2-1.jpg" class="img02" />
+          </div>
+          <div class="col-12 col-md-9 job">
+            <div class="b1">
+              <i class="bi bi-cup-hot"></i>
+              <p>Premium Indian Tea</p>
+            </div>
+
+            <div class="b2">
+              <h5>Net Weight</h5>
+              <div class="b22 d-flex">
+                <div class="b221"><img src="imges/1.png" /></div>
+                <div class="b221"><img src="imges/2.png" /></div>
+                <div class="b221"><img src="imges/3.png" /></div>
+              </div>
+            </div>
+
+            <div class="b3">
+              <p class="p1">
+                Our premium Indian tea comes from the finest tea plants grown on
+                the bank of Brahmaputra River in Assam and Darjeeling, India. It
+                possesses the fragrance and flavor of the traditional Indian
+                teas Infusion time: 8 to 12 minutes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box w-100">
+      <div class="container-fluid w-100 job3">
+        <div class="row">
+          <div class="col-12 col-md-3 job2">
+            <img src="imges/3.jpg" class="img02" />
+          </div>
+          <div class="col-12 col-md-9 job">
+            <div class="b1">
+              <i class="bi bi-cup-hot"></i>
+              <p>Teabags per box​</p>
+            </div>
+
+            <div class="b2">
+              <h5>Net Weight</h5>
+              <div class="b22 d-flex">
+                <div class="b221"><img src="imges/r100.png" /></div>
+                <div class="b221"><img src="imges/r50.png" /></div>
+                <div class="b221"><img src="imges/r25.png" /></div>
+              </div>
+            </div>
+
+            <div class="b3">
+              <p class="p1">
+                Golestan Pure Green Tea Bag are hugely popular due to their
+                antioxidants which minimize the risk of cancer and increase
+                metabolism which itself results in weight loss and helps control
+                blood pressure and cholesterol.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box w-100">
+      <div class="container-fluid w-100 job3">
+        <div class="row">
+          <div class="col-12 col-md-3 job2">
+            <img src="imges/4.jpg" class="img02" />
+          </div>
+          <div class="col-12 col-md-9 job">
+            <div class="b1">
+              <i class="bi bi-cup-hot"></i>
+              <p>Earl Grey Tea Bag​</p>
+            </div>
+
+            <div class="b2">
+              <h5>Teabags per box</h5>
+              <div class="b22 d-flex">
+                <div class="b221"><img src="imges/r100.png" /></div>
+                <div class="b221"><img src="imges/r50.png" /></div>
+                <div class="b221"><img src="imges/r25.png" /></div>
+              </div>
+            </div>
+
+            <div class="b3">
+              <p class="p1">
+                Our Earl Grey tea bag available in double-chamber bags is a
+                blend of the best Indian CTC teas flavored with bergamot, a
+                fruit which not only can produce a pleasant smell but dissipate
+                anxious feelings and simultaneously cleanse and purify skin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box w-100">
+      <div class="container-fluid w-100 job3">
+        <div class="row">
+          <div class="col-12 col-md-3 job2">
+            <img src="imges/primery.jpg" class="img02" />
+          </div>
+          <div class="col-12 col-md-9 job">
+            <div class="b1">
+              <i class="bi bi-cup-hot"></i>
+              <p>Premium Indian Tea Bag​</p>
+            </div>
+
+            <div class="b2">
+              <h5>Teabags per box</h5>
+              <div class="b22 d-flex">
+                <div class="b221"><img src="imges/r100.png" /></div>
+                <div class="b221"><img src="imges/r50.png" /></div>
+                <div class="b221"><img src="imges/r25.png" /></div>
+              </div>
+            </div>
+
+            <div class="b3">
+              <p class="p1">
+                Golestan premium Indian tea bag is a blend of the finest tea
+                leaves from India which brings you a soothing and refreshing
+                drink with a subtle flavor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fix"><img src="imges/golestan-logo.png" class="img01" /></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

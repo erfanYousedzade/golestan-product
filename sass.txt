@@ -1,0 +1,322 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../index.html');
+  src: url('../index.html') format('embedded-opentype'),
+       url('Lato-Regular.woff2') format('woff2'),
+       url('Lato-Regular.woff') format('woff'),
+       url('Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@mixin rang($x, $y) {
+  color: $x;
+  background-color: $y;
+}
+body {
+  font-family: sans-serif;
+}
+.navbar {
+  z-index: 1000;
+  i{
+    font-size: 14px;
+
+  }
+}
+
+.fix {
+  position: relative;
+  z-index: 2000 !important;
+}
+
+.img01 {
+  position: fixed !important;
+  z-index: 3000 !important;
+}
+
+
+/* ================= NAVBAR MAIN ================ */
+@media all and (max-width: 767px) {
+    .navbar ul .products,
+    .navbar ul .aboutus {
+        display: none !important;
+    }
+}
+.navbar {
+  @include rang(#afb2b4, rgb(37, 37, 37));
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* navbar زیر تصویر قرار می‌گیره */
+  i {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+/* حذف نقطه‌های li */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ================= IMAGE (img01) — FIXED & VISIBLE ================ */
+/* مهم: z-index تصویر بالاتر از navbar تا همیشه قابل مشاهده باشد */
+.img01 {
+  position: fixed !important; /* همیشه فیکس بمونه */
+  width: 180px;
+  z-index: 1100; /* بالاتر از navbar (1000) */
+  display: block;
+  max-width: 30%; /* انعطاف‌پذیری */
+  height: auto;
+  pointer-events: auto; /* اگر لازم باشه قابل کلیک باشه */
+  /* مقدار اولیه که در حالت موبایل درست باشه */
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* اگر خواستی قاب نگه‌دارنده هم تداخل نکند */
+.fix {
+  position: relative;
+  z-index: 0;
+}
+
+/* ================= IMAGE POSITION —RESPONSIVE ADJUSTMENTS=============== */
+@media all and (min-width: 300px) and (max-width: 767px) {
+    .navbar{
+        height: 220px;
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 991px) {
+  .img01 {
+    /* موبایل و تبلت کوچک: بالای صفحه و وسط */
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .img01 {
+    /* دسکتاپ: کمی به سمت چپ و پایینتر (زیر هدر) */
+    top: 30px;
+    left: 15%;
+    transform: translateX(-15%);
+    width: 180px;
+  }
+}
+
+/* ================= NAVBAR DESKTOP (≥991px) ================ */
+
+@media all and (min-width: 991px) {
+  .navbar {
+    height: 90px;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-30%);
+      top: 45px;
+
+      li {
+        font-size: 17px;
+        width: 110px;
+        position: relative;
+
+        a {
+          text-decoration: none;
+          @include rang(#afb2b4, rgb(37, 37, 37));
+        }
+
+        &:hover a {
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}
+
+/* ================= NAVBAR TABLET (768–990px) ================ */
+
+@media all and (min-width: 768px) and (max-width: 990px) {
+  .navbar {
+    height: 220px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 170px;
+
+      li {
+        display: flex;
+        font-size: 17px;
+        width: 105px;
+
+        a {
+          @include rang(#afb2b4, rgb(37, 37, 37));
+          text-decoration: none;
+        }
+
+        &:hover a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/* ================= DROPDOWN STYLE (PRODUCTS + ABOUT US) ================ */
+
+/* حالت پنهان */
+.navbar ul li .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(37, 37, 37);
+  color: #afb2b4;
+
+  padding: 10px 15px;
+  border-radius: 5px;
+  min-width: 140px;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-12px);
+  transition: opacity .3s ease, transform .3s ease;
+  z-index: 9999;
+}
+
+/* وقتی هاور می‌شود */
+.navbar ul li:hover .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* آیتم‌های داخل dropdown */
+.navbar ul li .dropdown p {
+  margin: 0;
+  padding: 6px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.job{
+  width: 500px;
+
+}
+.p1{
+   @include rang(#94979a, white);
+   font-size: 17px;
+}
+@media all and (min-width: 300px) and (max-width: 767px){
+  .box{
+    margin-top: 60px;
+  }
+  .job{
+    margin: 20px auto;
+   
+    width: 600px;
+  }
+  .img02{
+    width: 230px;
+    margin: 5px auto;
+
+  }
+  .job2{display: flex;
+  justify-content: center; }
+
+}
+.b1{display: flex;
+  p{
+    padding-left: 10px;
+     font-size: 20px;
+        @include rang(red, white); 
+        margin-top: 10px;
+  }
+  i{
+        font-size: 30px;
+        color: #94979a;
+      }
+}
+    .b2{
+      display: flex;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      height: 90px;
+      margin-top: 5px;
+      h5{margin-top: 6px;font-weight: bold;color: #52575b;}
+      .b22{margin-left: 250px;margin-top: 36px;}
+      .b221{
+        margin-left: 10px;
+      }
+      
+
+    }
+.b2{display: flex;}
+@media all and (min-width: 768px){
+  .box{
+  display: flex;
+ 
+  width: 1000px;
+  justify-content: center;
+  margin: 10px auto;
+  padding-left: 130px;
+  
+  padding-top: 130px;
+  .job{
+    padding-left: 50px;
+    .b1{
+      display: flex;
+      margin-top: 20px;
+      i{
+        font-size: 30px;
+        color: #94979a;
+      }
+      p{
+        font-size: 20px;
+        @include rang(red, white); 
+        margin-top: 10px;
+        padding-left: 10px;
+  
+      }
+ 
+    }
+    .b2{
+      display: flex;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      height: 60px;
+      margin-top: 5px;
+      h5{margin-top: 13px;font-weight: bold;color: #52575b;font-size: 17px;width: 190px;}
+      .b22{margin-left: 140px;margin-top: 5px;}
+      .b221{
+        margin-left: 6px;
+      }
+      
+
+    }
+  }
+
+
+
+
+ 
+
+ 
+
+}
+
+}
