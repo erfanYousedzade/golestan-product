@@ -9,8 +9,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 @mixin rang($x, $y) {
   color: $x;
   background-color: $y;
@@ -21,11 +19,6 @@
 body {
   font-family: sans-serif;
 }
-.navbar {
-
-
-}
-
 .fix {
   position: relative;
   z-index: 2000 !important;
@@ -136,8 +129,6 @@ background-image: url("../imges/back.png");
         position: relative;
         transition: all 800ms 0s;
         text-align: center;
-        
-
         a {
           text-decoration: none;
           @include rang(#afb2b4, rgb(37, 37, 37));
@@ -170,10 +161,7 @@ background-image: url("../imges/back.png");
       justify-content: center;
       position: fixed;
       padding-right: 90px;
-
-
       top: 170px;
-
       li {
         display: flex;
         @include fonts(17px);
@@ -204,9 +192,6 @@ background-image: url("../imges/back.png");
 
   padding: 10px 15px;
   border-radius: 5px;
-
-  width: 300px;
-
   opacity: 0;
   pointer-events: none;
   transform: translateY(-12px);
@@ -219,7 +204,7 @@ background-image: url("../imges/back.png");
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
-   width: 300px;
+
 }
 
 /* آیتم‌های داخل dropdown */
@@ -227,14 +212,12 @@ background-image: url("../imges/back.png");
   margin: 0;
   padding: 6px 0;
   cursor: pointer;
-   width: 500px;
+
 
   &:hover {
     color: #fff;
   }
 }
-.dropdown{width: 300px;}
-
 .p1{
    @include rang(#94979a, white);
    @include fonts(17px);
@@ -317,9 +300,7 @@ p{
   font-family: sans-serif;
   color: #b3b3b4;
 
-}}
-
-  
+}}  
 }
 }
 .b1{display: flex;
@@ -348,8 +329,6 @@ p{
       
 
     }
-
-
 //.......................................................................................media desktop
 @media all and (min-width: 768px){
   .box{
@@ -400,14 +379,6 @@ p{
 
     }
   }
-
-
-
-
- 
-
- 
-
 }
   .img03{width: 300px;padding-top: 130px;margin-left: 60px;}
 .b3{display: flex;
@@ -415,20 +386,11 @@ justify-content: center;}
 .row1{
   display: flex;
   justify-content: center;
-
-
-
-
-
 }
   .b31-2{
     margin-top: 220px;
     position: relative;
     left: 10%;
-
-
-
-
     h5{display: flex;
     justify-content: center;
   font-size: 55px;
@@ -446,12 +408,7 @@ color: #94979a;
 }
 .box2{
 height: 455px;
-
-
-
 background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
-
-
 }
 .box4{
   width: 100%;
@@ -489,9 +446,6 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   }
 }
 .box9{
-
-
-
   width: 680px;
   margin: 80px auto;
   p{
@@ -542,9 +496,6 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   }
 }
 .box9{
-
-
-
   width: 300px;
   margin: 60px auto;
   p{
@@ -593,9 +544,6 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   }
 }
 .box9{
-
-
-
   width: 500px;
   margin: 50px auto;
   p{
@@ -629,8 +577,6 @@ background-image:linear-gradient(rgb(251, 251, 251) 0%, rgb(210, 210, 210) 100%)
   .i5:hover{color: rgb(177, 25, 86);}
   .i6:hover{color: rgb(22, 128, 55);}
   @include rang(rgb(185, 184, 184),#edeaea )
-
-
 }
 .box6{background-color: red;
 height: 25px;
@@ -646,9 +592,7 @@ p{
 }
 h6{
  @include fonts(15px);
-  color: #9f9f9f;
-
-  
+  color: #9f9f9f;  
 }
 }
 /////////////////////////////////////////////////////////////////////////////////////for pair web
@@ -722,7 +666,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 /* بک‌گراندها */
 .navbar,
 .box2,
@@ -730,6 +673,15 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.navbar ul li .dropdown {
+  width: 190px;
+  text-align: start;
+  left: -20%;
+
+}
+.navbar ul li .dropdown {
+  max-width: none !important;
 }
 //@media all and (min-width: 999px) {
 //.box9,.b31-2,.img03{  

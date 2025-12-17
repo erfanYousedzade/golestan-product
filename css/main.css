@@ -168,7 +168,6 @@ body {
   color: #afb2b4;
   padding: 10px 15px;
   border-radius: 5px;
-  width: 300px;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-12px);
@@ -180,7 +179,6 @@ body {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
-  width: 300px;
 }
 
 /* آیتم‌های داخل dropdown */
@@ -188,14 +186,9 @@ body {
   margin: 0;
   padding: 6px 0;
   cursor: pointer;
-  width: 500px;
 }
 .navbar ul li .dropdown p:hover {
   color: #fff;
-}
-
-.dropdown {
-  width: 300px;
 }
 
 .p1 {
@@ -710,6 +703,16 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.navbar ul li .dropdown {
+  width: 190px;
+  text-align: start;
+  left: -20%;
+}
+
+.navbar ul li .dropdown {
+  max-width: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
